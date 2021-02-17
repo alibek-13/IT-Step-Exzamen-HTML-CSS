@@ -42,9 +42,12 @@ body {
     display: flex;
 }
 
+.content__items:hover { 
+    color: rgb(4, 45, 1);
+}
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -64,17 +67,14 @@ a {
 .nav__text-body {
     position: absolute;
     top: 35%;
-    padding-left: 40px;
     transform: translate(0% -50%);
 }
 
 .body__titel {
     display: block;
-    padding: 40px;
 }
 
 .body__text {
-    padding: 40px;
 }
 
 .body__titel-size-medium {
@@ -100,6 +100,41 @@ a {
 .social {
     position: absolute;
     top: 95%;
-    left: 40px;
 
+}
+
+.content {
+    padding: 0px 40px;
+}
+
+.ab__center {
+    display: flex;
+    justify-content: center;
+}
+
+.ab__content {
+    display: flex;
+
+}
+
+.ab__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ab__block-titel {
+    display: flex;
+    justify-content: center;
+}
+.ab__block-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.about {
+    padding: 128px 16px;
+}
+
+.ab__block {
+    padding: 12px;
 }
