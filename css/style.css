@@ -32,7 +32,6 @@ body {
     display: flex;
     justify-content: space-between;
    
-    padding: 0px 20px;
 }
 
 .block__items {
@@ -98,3 +97,9 @@ a {
 }
 
 
+.social {
+    position: absolute;
+    top: 95%;
+    left: 40px;
+
+}
