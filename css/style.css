@@ -114,17 +114,27 @@ a {
 
 .ab__content {
     display: flex;
-
+    min-width: 1024px;
+/* Нужно доработать flex-wrap: wrap; */
+    
 }
 
 .ab__block {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+
+
+}
+
+.ab__titel {
+    margin-bottom: 20px;
 }
 .ab__block-titel {
     display: flex;
     justify-content: center;
+ 
 }
 .ab__block-text {
     display: flex;
@@ -138,3 +148,22 @@ a {
 .ab__block {
     padding: 12px;
 }
+
+.icon__block {
+    display: flex;
+    justify-content: center;
+
+    margin:35px 0px;
+}
+
+.diseng__content {
+    display: flex;
+}
+
+.diseng__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+

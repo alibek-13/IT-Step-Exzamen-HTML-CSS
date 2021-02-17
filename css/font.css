@@ -2,11 +2,19 @@
     font-size: 64px;
 
 }
-.body__text-size {
+.body__text-size,.ab__block-text {
     font-size: 18px;
 }
 
-.ab__block-titel,.ab__text {
+.ab__block-titel,.ab__text,.dising__titel {
 
     font-size: 26px;
+}
+
+.ab__titel {
+    font-size: 32px;
+}
+
+.ab__icon {
+    font-size: 64px;   
 }
