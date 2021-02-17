@@ -13,31 +13,88 @@ body {
 
 }
 
-.nav {
+.nav__top {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
-.nav::before{
-    content: "";
-    display: block;
-    height: 10px;
+
+.nav__color{
+    background-color: white;
 }
-content {
-    max-width: 1500px;
+
+.content__top-nav {
+    height:60px;
 }
 
 .nav__row {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+   
+    padding: 0px 20px;
 }
 
 .block__items {
-    padding: 10px 10px;
+    padding: 20px;
+}
+
+.content__items {
+    display: flex;
 }
 
 a {
     text-decoration: none;
     color: black;
 }
+
+
+.nav__body {
+    position: relative;
+
+    min-height: 100%;
+
+}
+/*Надо разобратся с картинкой не показывает*/
+.bg__img {
+    background-image: url("/img/keyboard-bg.jpg");
+    
+    background-color: rgb(148, 0, 0);
+}
+
+.nav__text-body {
+    position: absolute;
+    top: 35%;
+    padding-left: 40px;
+    transform: translate(0% -50%);
+}
+
+.body__titel {
+    display: block;
+    padding: 40px;
+}
+
+.body__text {
+    padding: 40px;
+}
+
+.body__titel-size-medium {
+    display: none;
+}
+
+ .buttom__nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.buttom__text {
+
+    background-color: rgb(84, 101, 117);
+    padding: 25px;
+}
+.buttom__text:hover {
+    background-color: rgb(159, 167, 175);
+}
+
+
