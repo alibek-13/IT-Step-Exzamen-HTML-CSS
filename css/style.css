@@ -18,6 +18,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .nav__color{
@@ -206,4 +207,9 @@ a {
     height: 150px;
     width: 270px;
     overflow: hidden;
+}
+
+.marvel__block {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 8px;
 }
