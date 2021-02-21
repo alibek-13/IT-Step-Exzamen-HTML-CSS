@@ -13,6 +13,7 @@ body {
 
 }
 
+
 .nav__top {
     position: fixed;
     top: 0;
@@ -33,6 +34,12 @@ body {
     display: flex;
     justify-content: space-between;
    
+}
+
+@media (max-width:600px) {
+    .nav__row {
+        display: none;
+    }
 }
 
 .block__items {
@@ -60,7 +67,10 @@ a {
 }
 /*Надо разобратся с картинкой не показывает*/
 .bg__img {
+    background-position: center;
     background: url(../img/keyboard-bg.jpg);
+    background-size: cover;
+    min-height: 100%;
     overflow: auto; 
 }
 
@@ -120,9 +130,11 @@ a {
 }
 
 .ab__content {
-    display: flex;
-    min-width: 1024px;
-/* Нужно доработать flex-wrap: wrap; */
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+
     
 }
 
@@ -130,6 +142,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 200px;
+    margin: 20px;
 
 
 
@@ -162,16 +176,12 @@ a {
     padding: 12px;
 }
 
-.icon__block {
-    display: flex;
-    justify-content: center;
 
-    margin:35px 0px;
-}
 
 .diseng__content {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: rgb(211, 210, 210);
 }
 
@@ -204,12 +214,17 @@ a {
 
 
 .marvel__img {
-    height: 150px;
-    width: 270px;
-    overflow: hidden;
+
 }
 
 .marvel__block {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin: 8px;
+}
+
+.marvel__block-text {
+    max-width: 320px;
+}
+.icon__block {
+    width: 320px;
 }
